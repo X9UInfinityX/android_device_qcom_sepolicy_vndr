@@ -57,6 +57,8 @@ allow hal_audio_default kernel:system syslog_read;
 
 allow hal_audio_default vendor_audio_data_file:dir rw_dir_perms;
 allow hal_audio_default vendor_audio_data_file:file create_file_perms;
+allow hal_audio_default vendor_v4a_audio_data_file:dir rw_dir_perms;
+allow hal_audio_default vendor_v4a_audio_data_file:file create_file_perms;
 
 #Allow qipcrtr socket permisison
 allow hal_audio_default self:qipcrtr_socket create_socket_perms_no_ioctl;

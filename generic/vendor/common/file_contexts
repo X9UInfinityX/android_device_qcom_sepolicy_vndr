@@ -491,6 +491,7 @@
 /data/vendor/imslogs(/.*)?             u:object_r:vendor_imsd_data_file:s0
 # audio_data_file
 /data/vendor/audio(/.*)? u:object_r:vendor_audio_data_file:s0
+/data/vendor/audiox(/.*)? u:object_r:vendor_v4a_audio_data_file:s0
 /data/vendor/audio_dsp(/.*)? u:object_r:vendor_audio_dsp_data_file:s0
 
 # /
@@ -667,6 +668,7 @@
 /(vendor|system/vendor)/bin/init\.qcom\.early_boot\.sh  u:object_r:vendor_qti_init_shell_exec:s0
 /(vendor|system/vendor)/bin/init\.qcom\.efs\.sync\.sh   u:object_r:vendor_qti_init_shell_exec:s0
 /(vendor|system/vendor)/bin/init\.qcom\.post_boot\.sh   u:object_r:vendor_qti_init_shell_exec:s0
+/(vendor|system/vendor)/bin/init\.v4a\.sh               u:object_r:vendor_qti_init_shell_exec:s0
 /(vendor|system/vendor)/bin/init\.qti\.dcvs\.sh        u:object_r:vendor_init-qti-dcvs-sh_exec:s0
 /(vendor|system/vendor)/bin/init\.qcom\.sdio\.sh        u:object_r:vendor_qti_init_shell_exec:s0
 /(vendor|system/vendor)/bin/init\.qcom\.sensors\.sh     u:object_r:vendor_init-qcom-sensors-sh_exec:s0
@@ -741,4 +743,3 @@
 
 # VM file type management for persist
 /mnt/product/vm-persist(/.*)?                                              u:object_r:mnt_vendor_vm_file:s0
-

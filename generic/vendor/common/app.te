@@ -45,3 +45,6 @@ allow appdomain vendor_npu_device:chr_file r_file_perms;
 allow { appdomain -isolated_app_all -coredomain } vendor_dmabuf_system_heap_device:chr_file r_file_perms;
 
 dontaudit appdomain vendor_hal_qspmhal_hwservice:hwservice_manager find;
+allow appdomain vendor_data_file:dir search;
+allow appdomain vendor_v4a_audio_data_file:dir r_dir_perms;
+allow appdomain vendor_v4a_audio_data_file:file { rw_file_perms map };

@@ -142,3 +142,6 @@ set_prop(vendor_init, vendor_trustedui_listener_enabled_prop)
 set_prop(vendor_init, vendor_trustedui_listener_start_prop)
 set_prop(vendor_init, vendor_trustedui_start_prop)
 
+# ViPER4Android AIDL shared-memory files.
+allow vendor_init vendor_v4a_audio_data_file:dir create_dir_perms;
+allow vendor_init vendor_v4a_audio_data_file:file create_file_perms;
