@@ -35,6 +35,7 @@ dontaudit vendor_dpmd vendor_hal_dpmqmi_hwservice:hwservice_manager find;
 r_dir_file(vendor_dpmd, vendor_sysfs_data)
 
 hal_client_domain(vendor_dpmd,vendor_hal_dpmqmiservice_qti)
+allow vendor_dpmd vendor_hal_diaghal_service:service_manager find;
 
 #diag
 userdebug_or_eng(`
